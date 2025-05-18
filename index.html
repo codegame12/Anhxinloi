@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gửi cậu</title>
+    <title>Gửi Em</title>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
@@ -243,26 +243,26 @@
 <body id="playBtn" onclick="audio">
     <audio id="audio" src="./p1.mp3"></audio>
     <div>
-        <h1 id="messageTitle">Bạn có tin nhắn quan trọng</h1>
+        <h1 id="messageTitle">Em có tin nhắn quan trọng</h1>
         <p id="messageText">Xem ngay</p>
         <button id="btn">
             <img src="./letters.png" alt="Description">
         </button>
         <div class="message">Hi cậu,</div>
-        <div class="message">Đầu tiên, cảm ơn cậu rất nhiều vì đã đọc lá thư này.</div>
-        <div class="message">Tớ có một điều muốn nói, nhưng không biết bắt đầu từ đâu.</div>
-        <div class="message">Cậu đồng ý...</div>
+        <div class="message">Đầu tiên, cảm ơn em rất nhiều vì đã đọc lá thư này.</div>
+        <div class="message">Anh có một điều muốn nói, nhưng không biết bắt đầu từ đâu.</div>
+        <div class="message">Em...</div>
 
         <div id="msgYes" class="message-text" style="display: none;"><img id="yesImage"
                 src="https://i.pinimg.com/originals/dc/b9/6f/dcb96f174bb3e9615a4f7d5e9e161f14.gif" alt="Description">
-            Cậu đồng ý làm người yêu tớ nhaaaa 💕</div>
+            Em tha lỗi cho anh lần này nhaaaa 💕</div>
         <div class="div-buttons">
-            <button id="btnYes" style="display: none;">Đồng ý</button>
-            <button id="btnNo" style="display: none;">Không</button>
+            <button id="btnYes" style="display: none;">ừm,Em tha lỗi cho anh</button>
+            <button id="btnNo" style="display: none;">Không,em còn giận anh</button>
         </div>
 
         <div id="messageBox" class="message-text hide">
-            <a>Tớ biết mà! Viết lời nhắn của cậu vào đây:</a>
+            <a>Anh biết mà! Viết lời nhắn của em vào đây:</a>
             <textarea id="userMessage" rows="4" cols="50" placeholder="Nhập lời nhắn của bạn..."></textarea><br>
             <button id="btnSend">Gửi cậu</button>
         </div>
@@ -330,7 +330,7 @@
             const userMessage = document.getElementById("userMessage").value;
 
             if (userMessage.trim() !== "") {
-                alert("Lời nhắn của bạn:" + " Chúng mình yêu nhau nhé 💕");
+                alert("Lời nhắn của bạn:" + " Em tha lỗi cho anh nhé 💕");
                 document.getElementById("messageBox").classList.remove("show");
                 document.getElementById("messageBox").style.display = "none";
             } else {
@@ -344,11 +344,10 @@
         });
 
         const messagesForNo = [
-            "Cậu vừa bảo gì cơ",
-            "Cậu bảo không",
-            "Không thể không yêu nhau sao",
-            "Cảm ơn cậu đã nhận lời yêu tớ.",
-            "Xíu tớ qua đón đi chơi"
+            "Em vừa bảo gì cơ",
+            "Em bảo không",
+            "Không thể không tha lỗi sao",
+            "Thôi mà, tha lỗi cho anh nhé😢!.",
         ];
 
         let currentMessageForNo = 0;
